@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 # See https://pypi.org/project/inquirer/
 # This library gives us a succinct way of obtaining all kinds of 
@@ -56,6 +56,7 @@ class Hangman:
                 )
 
             self.target_word = random.choice(words)
+            self.target_word = "hypersensitivity"
 
         self.revealed_word = ['-'] * len(self.target_word)
         self.num_strikes_remaining = 10
